@@ -1,4 +1,5 @@
-- - create table CREATE TABLE students (
+--  create table 
+CREATE TABLE students (
     id int NOT NULL PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     middle_name VARCHAR(255),
@@ -6,9 +7,7 @@
     age INT NOT NULL,
     location VARCHAR(255)
 );
-- -
-insert
-    records
+-- insert records
 INSERT INTO
     students (
         id,
@@ -25,9 +24,7 @@ VALUES
     (4, 'Issac', NULL, 'Gray', 19, 'Laguna'),
     (5, 'Zack', NULL, 'Matthews', 22, 'Marikina'),
     (6, 'Finn', NULL, 'lam', 25, 'Manila');
-- -
-update
-    students
+--update students
 UPDATE
     students
 SET
@@ -38,31 +35,29 @@ SET
     location = 'Bulacan'
 WHERE
     id = 1;
-- - delete records
+-- delete records
 DELETE FROM
     students
 WHERE
     id = 6;
-- - display count of all students
+-- display count of all students
 SELECT
     COUNT(*)
 FROM
     students;
-- -
-select
-    all students with location = Manila
+--select all students with location = Manila
 SELECT
     *
 FROM
     students
 WHERE
     location = 'Manila';
-- - display average age of all students
+-- display average age of all students
 SELECT
     AVG(age)
 FROM
     students;
-- - display all students by age in descending order
+-- display all students by age in descending order
 SELECT
     *
 FROM
