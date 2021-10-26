@@ -1,3 +1,4 @@
+# All numbers are equal except for one. 
 def find_uniq(arr)
   return nil if arr.size < 3
   if arr[0] == arr[1]
